@@ -6,27 +6,40 @@ import Photo from './Photo'
 
 function App() {
 
+  const today = new Date().toISOString().slice(0, 10)
   const [nasaData, setNasaData] = useState([])
-
+  const [date, setDate] = useState(today)
   useEffect(() => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=WM8HGgEkFZvr8UCpth0UL75qYckZOHzs0QkP3V6I')
       .then(res => {
-        console.log(res)
         setNasaData(res.data)
       })
       .catch(err => {
         console.error(err)
       })
       .finally(() => {
-        console.log('axios apod api get resuqest made')
+        console.log('axios apod api get request made')
       })
   }, [])
 
-  console.log(nasaData)
+  // const submit = (event) => {
+  //   event.preventDefault()
+
+  // }
+  const change = (event) => {
+    console.log(event.target.value)
+    axios.get(`https://api.nasa.gov/planetary/apod?api_key=WM8HGgEkFZvr8UCpth0UL75qYckZOHzs0QkP3V6I&date=${event.target.value}`)
+      .then(res => {
+        setNasaData(res.data)
+      })
+      .catch(err => {
+        console.error(err)
+      })
+  }
 
   return (
     <div className="App">
-      <Photo nasaData={nasaData} />
+      <Photo change={change} nasaData={nasaData} date={date} />
     </div>
   );
 }
