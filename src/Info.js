@@ -10,6 +10,10 @@ const StyledInfo = styled.p`
 
     font-family: Helvetica, Verdana, Arial, sans-serif;
 
+    :hover {
+        color: lightblue;
+    }
+
 `
 
 const Info = (props) => {

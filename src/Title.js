@@ -6,7 +6,9 @@ const StyledTitle = styled.h1`
 
     padding: 2rem;
 
-
+    :hover {
+        color: lightblue;
+    }
 
 `
 

@@ -9,6 +9,15 @@ const StyledPhoto = styled.div`
 
     p {
         padding: .8rem;
+        :hover {
+            color: lightblue;
+        }
+    }
+
+    label {
+        :hover{
+            color: lightblue;
+        }
     }
 
     font-family: 'Courier New', monospace;
