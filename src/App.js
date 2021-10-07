@@ -4,6 +4,8 @@ import axios from 'axios'
 import Title from "./Title";
 import Photo from './Photo';
 import Info from './Info';
+import StyledApp from "./StyledApp";
+import styled from "styled-components";
 
 function App() {
 
@@ -32,11 +34,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <StyledApp>
       <Title nasaData={nasaData} />
       <Photo change={change} nasaData={nasaData} date={date} />
       <Info nasaData={nasaData} />
-    </div>
+    </StyledApp>
   );
 }
 

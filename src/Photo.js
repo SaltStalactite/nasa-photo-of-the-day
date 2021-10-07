@@ -1,11 +1,25 @@
 import React from "react";
+import styled from "styled-components";
+
+const StyledPhoto = styled.div`
+
+    img {
+        border-radius: 20px;
+    }
+
+    p {
+        padding: .8rem;
+    }
+
+    font-family: 'Courier New', monospace;
+`
 
 const Photo = (props) => {
     const { nasaData, change, date } = props
 
 
     return (
-        <div>
+        <StyledPhoto>
             <img src={nasaData.url} alt="Nasa Astronomy Photograph of the Day, check info section for details" />
             <p>Date: {nasaData.date}</p>
             <form>
@@ -14,7 +28,7 @@ const Photo = (props) => {
                 </label>
             </form>
             <p>Copyright: {nasaData.copyright}</p>
-        </div>
+        </StyledPhoto>
 
     )
 }
