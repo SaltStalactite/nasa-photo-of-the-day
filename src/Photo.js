@@ -36,6 +36,31 @@ const StyledPhoto = styled.div`
     }
 
     font-family: 'Courier New', monospace;
+
+    @media (max-width: 1100px) {
+        img {
+            width: 40rem
+        }
+    }
+
+    @media (max-width: 710px) {
+        img {
+            width: 25rem
+        }
+        font-size: .9rem;
+    }
+    @media (max-width: 470px) {
+        img {
+            width: 20rem
+        } 
+        font-size: .6rem;
+    }
+    @media (max-width: 384px) {
+        img {
+            width: 18rem
+        } 
+    }
+        
 `
 
 const Photo = (props) => {

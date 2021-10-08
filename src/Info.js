@@ -14,6 +14,26 @@ const StyledInfo = styled.p`
         color: lightblue;
         transition: all .4s ease-in-out;
     }
+    @media (max-width: 600px) {
+       font-size: .9rem;
+       padding-left: 6rem;
+       padding-right:6rem;
+    }
+    @media (max-width: 550px) {
+        font-size: .9rem;
+        padding-left: 3rem;
+        padding-right:3rem;
+     }
+     @media (max-width: 550px) {
+        font-size: .9rem;
+        padding-left: 3rem;
+        padding-right:3rem;
+     }
+     @media (max-width: 450px) {
+        font-size: .6rem;
+        padding-left: 2rem;
+        padding-right:2rem;
+     }
 
 `
 

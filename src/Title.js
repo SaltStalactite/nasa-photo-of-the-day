@@ -11,6 +11,17 @@ const StyledTitle = styled.h1`
         transition: all .4s ease-in-out;
     }
 
+    @media (max-width: 710px) {
+        font-size: 1.4rem
+            
+        }
+    @media (max-width: 470px) {
+            font-size: 1rem;
+            padding: 1rem;
+            }
+        
+        
+
 `
 
 const Title = (props) => {
