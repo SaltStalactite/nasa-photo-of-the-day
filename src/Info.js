@@ -21,6 +21,8 @@ const Info = (props) => {
 
     const { nasaData } = props
 
+    if (!nasaData.explanation) return <h4>Loading your photo's info</h4>
+
     return (
         <StyledInfo>Info: {nasaData.explanation}</StyledInfo>
     )

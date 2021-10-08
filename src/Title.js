@@ -17,6 +17,8 @@ const Title = (props) => {
 
     const { nasaData } = props
 
+    if (!nasaData.title) return <h2>Loading...</h2>
+
     return (
         <StyledTitle>
             <div>

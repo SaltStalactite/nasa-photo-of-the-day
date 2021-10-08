@@ -5,7 +5,6 @@ import Title from "./Title";
 import Photo from './Photo';
 import Info from './Info';
 import StyledApp from "./StyledApp";
-import styled from "styled-components";
 
 function App() {
 
