@@ -33,7 +33,7 @@ const Title = (props) => {
     return (
         <StyledTitle>
             <div>
-                Photo of the Day:<br>
+                NASA Photo of the Day:<br>
                 </br>{nasaData.title}
             </div>
         </StyledTitle>
