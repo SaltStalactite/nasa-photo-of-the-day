@@ -8,6 +8,7 @@ const StyledTitle = styled.h1`
 
     :hover {
         color: lightblue;
+        transition: all .4s ease-in-out;
     }
 
 `

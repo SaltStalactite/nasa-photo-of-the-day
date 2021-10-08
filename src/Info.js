@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 const StyledInfo = styled.p`
 
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
 
@@ -12,6 +12,7 @@ const StyledInfo = styled.p`
 
     :hover {
         color: lightblue;
+        transition: all .4s ease-in-out;
     }
 
 `

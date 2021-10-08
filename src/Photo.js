@@ -11,12 +11,14 @@ const StyledPhoto = styled.div`
         padding: .8rem;
         :hover {
             color: lightblue;
+            transition: all .4s ease-in-out;
         }
     }
 
     label {
         :hover{
             color: lightblue;
+            transition: all .4s ease-in-out;
         }
     }
 
